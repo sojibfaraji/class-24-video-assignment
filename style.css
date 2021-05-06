@@ -1,0 +1,198 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.clear::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.fixwidth{
+    max-width: 1080px;
+    margin: auto;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* begain main css*/
+.header{
+    background-color: #000;
+}
+.header-logo{
+    width: 30%;
+}
+.logo img {
+	width: 125px;
+	padding-top: 10px;
+}
+.header-menu{
+    width: 70%;
+}
+.header-menu ul {
+	text-align: right;
+}
+.header-menu ul li {
+	display: inline-block;
+}
+.header-menu ul li a {
+	display: inline-block;
+	color: #fff;
+	line-height: 75px;
+	font-size: 20px;
+    padding: 0 15px;
+    transition: .5s;
+}
+.header-menu ul li:hover >a{
+    color: #a0cee9;
+}
+.header-menu ul li{
+    position: relative;
+}
+.header-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: -39%;
+    width: 200px;
+    background: #000;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: .5s;
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.header-menu ul li ul li {
+	display: block;
+	border-top: 1px solid #ddd;
+}
+.header-menu ul li ul li a {
+	display: block;
+	padding: 0;
+}
+
+
+/* banner-section */
+
+.banner{
+    background-image: url(https://i.ibb.co/VC8GgvV/background-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+}
+.banner-content h2{
+    font: outline;
+}
+.banner-content h2 {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+.banner-content a{
+	display: inline-block;
+	margin-top: 10px;
+	background: #000;
+	padding: 10px 15px;
+	color: #fff;
+	text-transform: uppercase;
+    font-weight: 400;
+    transition: .5s;
+}
+.banner-content a:hover{
+    background-color:#1f572b;
+    color: #fff;
+}
+
+/* content-section */
+
+.content{
+    background-color: #000;
+    color: #fff;
+}
+
+.content-left{
+    width: 60%;
+}
+.content-left h4 {
+	font-size: 22px;
+	padding: 50px 0;
+	line-height: 1.5;
+}
+.content-right{
+    width: 35%;
+}
+.content-right img {
+	padding: 45px 0;
+	width: 229px;
+	text-align: right;
+}
+
+/* team-section */
+.team{
+    padding: 30px 0;
+    background-color: #458b83;
+}
+
+.heading h2 {
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+.our-team{
+    width: 33.3%;
+}
+.social-icon{
+    text-align: center;
+}
+.social-icon li {
+	display: inline-block;
+	padding: 5px 8px;
+}
+.social-icon li a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background: #000;
+	border-radius: 50%;
+    color: #fff;
+    transition: .5s;
+}
+.social-icon li:nth-child(1) a:hover{
+    background-color: #3b5a9a;
+    color: #ffffff;
+
+}.social-icon li:nth-child(2) a:hover{
+    background-color:#1aa9e1;
+    color: #ffffff;
+
+}.social-icon li:nth-child(3) a:hover{
+    background-color: #751d62;
+    color: #ffffff;
+}
